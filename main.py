@@ -30,3 +30,5 @@ print(System.display_student_enrollments(1, "Brayden"))
 print(System.list_staff())
 print(System.list_courses())
 print(System.list_students())
+
+# I created a video showing the problem, and sent it via gmail

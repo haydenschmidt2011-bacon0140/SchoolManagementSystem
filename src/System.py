@@ -1,4 +1,3 @@
-from src.Staff import Staff
 class System:
     def __init__(self):
         self.students = []
@@ -31,4 +30,4 @@ class System:
             print(str(x))
 
     def display_student_enrollments(self, idx, name):
-            print(self.students[idx], "Is Enrolled In", self.enroll.get(name))
+        print(self.students[idx], "Is Enrolled In", self.enroll.get(name))
