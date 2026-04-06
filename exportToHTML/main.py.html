@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">src</span><span class="s2">.</span><span class="s1">Student </span><span class="s0">import </span><span class="s1">Student</span>
+<span class="s0">from </span><span class="s1">src</span><span class="s2">.</span><span class="s1">Staff </span><span class="s0">import </span><span class="s1">Staff</span>
+<span class="s0">from </span><span class="s1">src</span><span class="s2">.</span><span class="s1">Course </span><span class="s0">import </span><span class="s1">Course</span>
+<span class="s0">from </span><span class="s1">src</span><span class="s2">.</span><span class="s1">Enrollment </span><span class="s0">import </span><span class="s1">Enrollment</span>
+<span class="s0">from </span><span class="s1">src</span><span class="s2">.</span><span class="s1">System </span><span class="s0">import </span><span class="s1">System</span>
+
+<span class="s1">System </span><span class="s2">= </span><span class="s1">System</span><span class="s2">()</span>
+
+<span class="s1">Hayden </span><span class="s2">= </span><span class="s1">Student</span><span class="s2">(</span><span class="s3">1</span><span class="s2">, </span><span class="s4">&quot;Hayden&quot;</span><span class="s2">, </span><span class="s4">&quot;haschmidt&quot;</span><span class="s2">, </span><span class="s3">9</span><span class="s2">)</span>
+<span class="s1">Brayden </span><span class="s2">= </span><span class="s1">Student</span><span class="s2">(</span><span class="s3">2</span><span class="s2">, </span><span class="s4">&quot;Brayden&quot;</span><span class="s2">, </span><span class="s4">&quot;bschmidt&quot;</span><span class="s2">, </span><span class="s3">9</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_student</span><span class="s2">(</span><span class="s4">&quot;Hayden&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_student</span><span class="s2">(</span><span class="s4">&quot;Brayden&quot;</span><span class="s2">)</span>
+<span class="s1">HaydenEnroll </span><span class="s2">= </span><span class="s1">Enrollment</span><span class="s2">(</span><span class="s4">&quot;Hayden&quot;</span><span class="s2">, </span><span class="s4">&quot;Geometry&quot;</span><span class="s2">)</span>
+<span class="s1">BraydenEnroll </span><span class="s2">= </span><span class="s1">Enrollment</span><span class="s2">(</span><span class="s4">&quot;Brayden&quot;</span><span class="s2">, </span><span class="s4">&quot;Python&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_enrollment</span><span class="s2">(</span><span class="s4">&quot;Hayden&quot;</span><span class="s2">, </span><span class="s4">&quot;Geometry&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_enrollment</span><span class="s2">(</span><span class="s4">&quot;Brayden&quot;</span><span class="s2">, </span><span class="s4">&quot;Python&quot;</span><span class="s2">)</span>
+
+<span class="s1">Omar </span><span class="s2">= </span><span class="s1">Staff</span><span class="s2">(</span><span class="s3">11</span><span class="s2">, </span><span class="s4">&quot;Omar&quot;</span><span class="s2">, </span><span class="s4">&quot;omaralk&quot;</span><span class="s2">, </span><span class="s4">&quot;Python&quot;</span><span class="s2">)</span>
+<span class="s1">Brunkan </span><span class="s2">= </span><span class="s1">Staff</span><span class="s2">(</span><span class="s3">12</span><span class="s2">, </span><span class="s4">&quot;Brunkan&quot;</span><span class="s2">, </span><span class="s4">&quot;mrbrunkan&quot;</span><span class="s2">, </span><span class="s4">&quot;Geometry&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_staff</span><span class="s2">(</span><span class="s4">&quot;Omar&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_staff</span><span class="s2">(</span><span class="s4">&quot;Brunkan&quot;</span><span class="s2">)</span>
+
+<span class="s1">Python </span><span class="s2">= </span><span class="s1">Course</span><span class="s2">(</span><span class="s3">21</span><span class="s2">, </span><span class="s4">&quot;Python&quot;</span><span class="s2">, </span><span class="s4">&quot;Omar&quot;</span><span class="s2">)</span>
+<span class="s1">Geometry </span><span class="s2">= </span><span class="s1">Course</span><span class="s2">(</span><span class="s3">22</span><span class="s2">, </span><span class="s4">&quot;Geometry&quot;</span><span class="s2">, </span><span class="s4">&quot;Brunkan&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_course</span><span class="s2">(</span><span class="s4">&quot;Python&quot;</span><span class="s2">)</span>
+<span class="s1">System</span><span class="s2">.</span><span class="s1">add_course</span><span class="s2">(</span><span class="s4">&quot;Geometry&quot;</span><span class="s2">)</span>
+
+<span class="s1">print</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">list_staff</span><span class="s2">())</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">list_courses</span><span class="s2">())</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">list_students</span><span class="s2">())</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">display_student_enrollments</span><span class="s2">())</span></pre>
+</body>
+</html>
