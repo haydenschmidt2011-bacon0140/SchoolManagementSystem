@@ -14,8 +14,8 @@ class System:
     def add_course(self, x):
         self.courses.append(x)
 
-    def add_enrollment(self, name, course):
-        self.enroll[name] = course
+    def add_enrollment(self, student, course, teacher):
+        self.enroll[student] = (course, teacher)
 
     def list_students(self):
         for x in self.students:
@@ -29,5 +29,6 @@ class System:
         for x in self.courses:
             print(str(x))
 
-    def display_student_enrollments(self, idx, name):
-        print(self.students[idx], "Is Enrolled In", self.enroll.get(name))
+    def display_student_enrollments(self):
+        for student, (course, teacher) in self.enroll.items():
+            print(student, "Is Enrolled In", course, "With", teacher.email)
